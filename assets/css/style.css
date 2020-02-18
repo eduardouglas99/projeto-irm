@@ -58,7 +58,7 @@ header p{
 }
 
 .header-celular{
-	transform: translate(-6%,11%);
+	transform: translate(-22px,63px);
 }
 
 .header-celular img:nth-child(2){
@@ -111,7 +111,7 @@ header p{
 	padding: 50px;
 	text-align: center;
 	background-color: #fff2f3;
-	transform: translate(10%, -30%);
+	transform: translate(20px, -60px);
 }
 
 footer .ongs-footer img:nth-child(1){
@@ -167,17 +167,22 @@ footer .page-container {
     font-size: 12px;
     width: 406px;
     position: relative;
+    margin-right: 44px;
 }
 
 .logos-infooter{
-	display: grid;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
 }
 .logos-infooter img:nth-child(1){
 	width: 136px;
+	margin-bottom: 20px;
 }
 .infooter .page-container{
 	align-items: flex-start;
-	justify-content: space-around;
+	padding: 0 25px;
 }
 
 
@@ -188,5 +193,10 @@ footer .page-container {
 	display: inline-block;
 	background-color: #5f5f5f;
 	position: absolute;
+	left: -20px;
+}
+
+.textos-selos{
+	display: flex;
 }
 
