@@ -59,13 +59,29 @@ header p{
 
 .header-celular{
 	transform: translate(-22px,63px);
+	animation-name: celularAnimacao;
+	animation-duration: 2s;
+
+}
+
+@keyframes celularAnimacao {
+	 0% { opacity: 0;}
+     100% { opacity: 1;) }
+
 }
 
 .header-celular img:nth-child(2){
 	position: absolute;
     top: 25%;
     right: -6%;
+    animation-name: coracaoAnimacao;
+    animation-duration:4s;
 }
+@keyframes coracaoAnimacao{
+	0% {transform:translate(50px,50px)}
+    100% {transform:translate(0px,0px)}
+}
+
 .page-container .text-section p:nth-child(1){
 	color: #4872ae;
     font-size: 25px;
@@ -142,9 +158,15 @@ footer .page-container {
     justify-content: center;
 }
 
+.circle-redesocias:hover{
+	background-color: #628bcb;
+	border: 1px solid #e30e23;
+}
+
 .link-color{
 	color: #fff;
 }
+
 
 .infooter{
 	background-color: #ccc;
@@ -154,6 +176,10 @@ footer .page-container {
 .lista-infooter{
 	list-style-type: none;
 	text-transform: uppercase;
+}
+
+.lista-infooter:hover{
+	text-decoration: underline;
 }
 
 .lista-infooter li a {
