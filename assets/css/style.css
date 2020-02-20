@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	font-family: futura;
 }
-
 @font-face{
 	font-family: futura;
 	src: url(..fonts/'futura.woff2');
@@ -39,8 +38,6 @@ footer{
 	padding: 20px;
 	width: 280px;
 }
-
-
 .page-container h2{
 	font-size: 50px;
     margin: 60px 0 20px 20px;
@@ -61,13 +58,11 @@ header p{
 	transform: translate(-22px,63px);
 	animation-name: celularAnimacao;
 	animation-duration: 2s;
-
 }
 
 @keyframes celularAnimacao {
 	 0% { opacity: 0;}
      100% { opacity: 1;) }
-
 }
 
 .header-celular img:nth-child(2){
@@ -156,17 +151,46 @@ footer .page-container {
     display: flex;
     align-items: center;
     justify-content: center;
+	cursor: pointer;
+  	box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  	animation: pulse 2s linear -2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
 }
 
 .circle-redesocias:hover{
 	background-color: #628bcb;
 	border: 1px solid #e30e23;
+	animation: none;
 }
 
 .link-color{
 	color: #fff;
 }
-
 
 .infooter{
 	background-color: #ccc;
@@ -210,7 +234,6 @@ footer .page-container {
 	align-items: flex-start;
 	padding: 0 25px;
 }
-
 
 .textos-infooter::before{
 	content: '';
