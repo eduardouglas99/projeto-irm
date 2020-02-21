@@ -67,8 +67,8 @@ header p{
 
 .header-celular img:nth-child(2){
 	position: absolute;
-    top: 25%;
-    right: -6%;
+    top: 140px;
+    right: -30px;
     animation-name: coracaoAnimacao;
     animation-duration:4s;
 }
@@ -182,10 +182,9 @@ footer .page-container {
   }
 }
 
+
 .circle-redesocias:hover{
-	background-color: #628bcb;
-	border: 1px solid #e30e23;
-	animation: none;
+	transform: scale(1.1);
 }
 
 .link-color{
@@ -248,4 +247,29 @@ footer .page-container {
 .textos-selos{
 	display: flex;
 }
+
+@media screen and (max-width: 1200px){
+	.page-container{
+		max-width: 850px;
+}
+	.header-logo {
+    	padding: 10px;
+    	width: 280px;
+}
+    .page-container h2 {
+    	font-size: 35px;
+}
+	header p {
+    	font-size: 20px;
+}
+	.page-container .text-section {
+    	width: 465px;
+}
+	.ongs-footer {
+    	width: 310px;
+    	padding: 50px 20px;
+}
+
+
+	}
 
