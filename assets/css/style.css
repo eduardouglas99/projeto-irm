@@ -28,7 +28,10 @@ footer{
     justify-content: space-between;
 }
 
-.page-container{
+header .page-container,
+section .page-container,
+footer .page-container,
+footer .infooter .page-container {
 	max-width: 1150px;
 	margin:0 auto;
 }
@@ -82,14 +85,21 @@ header p{
     font-size: 25px;
     line-height: 37px;
     font-weight: 500;
-    margin: 0 0 70px 20px;
+    margin: 0 0 70px 0px;
 }
 
 .page-container .text-section p:not(:first-child){
 	color:#5f5f5f;
 	font-size:23px;
-	margin: 0 0 50px 20px;
+	margin: 0 0 50px 0px;
 }
+
+.page-container .text-section p:nth-child(1),
+.page-container .text-section p:nth-child(2),
+.page-container .text-section p:nth-child(3){
+	margin-left: 20px;
+}
+
 .page-container .text-section p:nth-child(3){
 	font-weight: bold;
 }
@@ -131,23 +141,30 @@ footer .ongs-footer img:nth-child(1){
 
 .redes-socias {
     font-size: 24px;
-    display: flex;
-    justify-content: space-between;
     width: 151px;
 }
+.redes-socias,
+.socias-images{
+	justify-content: space-between;
+}
 
-footer .flex{
+footer .flex,
+.socias-images,
+.circle-redesocias {
 	align-items: center;
 }
-footer .page-container {
-    margin: 0 auto;
-    max-width: 1150px;
-}
-.socias-images{
+
+.socias-images,
+.circle-redesocias,
+.logos-infooter,
+.textos-selos,
+.socias-images,
+.redes-socias{
 	display: flex;
-    align-items: center;
+}
+
+.socias-images{
     width: 500px;
-    justify-content: space-between;
  }
 
 .circle-redesocias{
@@ -155,12 +172,9 @@ footer .page-container {
     border-radius: 50%;
     width: 42px;
     height: 42px;
-    display: flex;
-    align-items: center;
     justify-content: center;
 	transition: all .3s ease;
- 
-}
+ }
 
 .circle-redesocias:hover{
 	transform: scale(1.1);
@@ -199,10 +213,8 @@ footer .page-container {
 }
 
 .logos-infooter{
-	display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
 .logos-infooter img:nth-child(1){
 	width: 136px;
@@ -228,8 +240,12 @@ footer .page-container {
 }
 
 @media screen and (max-width: 1200px){
-	header .page-container{
+	header .page-container,
+	section .page-container,
+	footer .page-container,
+	footer .infooter .page-container {
 		max-width: 850px;
+		margin: 0 auto;
 	}
 	.header-logo {
     	padding: 10px;
@@ -237,10 +253,6 @@ footer .page-container {
 	}
     .page-container h2 {
     	font-size: 35px;
-	}
-	section .page-container{
-		max-width: 850px;
-   		margin: 0 auto;
 	}
 	header p {
     	font-size: 20px;
@@ -252,18 +264,19 @@ footer .page-container {
     	width: 310px;
     	padding: 50px 20px;
 	}
-	footer .page-container{
-		max-width: 850px;
-		margin:0 auto;
-	}
 	.socias-images{
 		justify-content: space-around;
 	}
 }
 
-@media screen and (max-width: 910px){
-	header .page-container{
-		max-width: 500px;
+@media screen and (max-width: 1024px){
+	header  .page-container,
+	section .page-container,
+	footer  .page-container,
+	footer  .infooter .page-container {
+		max-width: 580px;
+    	margin: 0 auto;
+    	text-align: center;
 	}
 	.header-logo{
 		width: 150px;
@@ -281,7 +294,7 @@ footer .page-container {
     	transform: translate(-21px,6px);
 	}
 	.header-celular img:nth-child(1){
-		width: 160px;
+		width: 180px;
 	}
 	.header-celular img {
     	transform: translateY(-26px);
@@ -291,29 +304,34 @@ footer .page-container {
 		top: 90px;
     	right: -30px;
 	}
-
 	section{
-		max-width: 500px;
-    	margin: 0 auto;
-    	text-align: center;
     	padding: 150px 0;
 	}
-	section .page-container {
+	section .page-container,
+	footer .page-container,
+	.infooter .page-container {
 		display: block;
 	}
 	.text-section,
-	.sociais-download{
+	.sociais-download,
+	.ongs-footer,
+	.socias-images{
 		margin: 0 auto;
 	}
 	.page-container .text-section p:nth-child(1) {
     	font-size: 23px;
     }
-
-    .page-container .text-section p:not(:first-child) {
+	.page-container .text-section p:nth-child(2){
     	font-size: 20px;
     }
+	.page-container .text-section p:nth-child(3){
+		font-size: 18px;
+	}
+	.page-container .sociais-download,
+	.ongs-footer{
+		width: 250px;
+	}
     .page-container .sociais-download{
-    	width: 250px;
     	height: 340px;
     	padding: 50px 40px;
     }
@@ -321,15 +339,10 @@ footer .page-container {
     	font-size: 30px;
     }
     .page-container .sociais-download img {
-   	 width: 140px;
-	}
-	footer .page-container{
-		display: block;
+   	 	width: 140px;
 	}
 	.ongs-footer {
-    	width: 250px;
     	padding: 50px 20px;
-    	margin: 0 auto;
     	transform: translate(2px, -61px);
 	}
 	footer .ongs-footer img:nth-child(1) {
@@ -338,36 +351,137 @@ footer .page-container {
 	footer .ongs-footer img:nth-child(2) {
 		width: 60px;
 	}
-	.socias-images{
-    	display: flex;
+	.socias-images,
+	.textos-selos{
+		display: flex;
     	align-items: center;
+	}
+	.socias-images{;
    	 	max-width: 540px;
-    	margin: 0 auto;
     	justify-content: space-evenly;
    		padding: 0 0 30px 0;
 	}
 	.socias-images img{
 		width:200px;
 	}
-
 	.infooter .page-container{
-		display: block;
     	max-width: 600px;
     }
+    .lista-infooter,
+    .textos-selos .textos-infooter{
+    	text-align: left;
+    }
+
     .lista-infooter{
     	margin-bottom: 40px;
-    	text-align: center;
     }
-    .textos-selos {
-    	display: flex;
-    	align-items: center;
-	}
 	.textos-infooter::before {
     	left: 374px;
 	}
-
+	.page-container .text-section p:nth-child(1),
+	.page-container .text-section p:nth-child(2),
+	.page-container .text-section p:nth-child(3) {
+		margin: 0 0 70px 0;
+	}
 }
 
-@media screen and (max-width:580px){
-
+@media screen and (max-width:768px){
+	header .page-container,
+	section .page-container,
+	footer .page-container,
+	footer .infooter .page-container {
+		display: block;
+    	margin: 0 auto;
+    	max-width: none;
+    	text-align: center;
+    	padding: 0 30px;
+	}
+	.header-logo,
+	.redes-socias{
+		margin: 0 auto;
+	}
+	.header-logo h2,
+	.textos-infooter {
+		text-align: center;
+	}
+	.page-container h2{
+		margin: 20px 0;
+		line-height: 28px;
+	}
+	header p{
+		margin: 15px 0;
+	}
+	section {
+    	padding: 90px 0;
+	}
+	section .page-container .text-section p{
+		margin-left: 0;
+	}
+	.header-celular {
+    	transform: translate(0px,60px);
+    }
+    .header-celular img:nth-child(1){
+    	width: 140px;
+    }
+    .header-celular img:nth-child(2) {
+    	top: 110px;
+    	right: 255px;
+	}
+	@keyframes coracaoAnimacao{
+		0% {
+    		top: 60px;
+    		left: 180px;
+		}
+		100% {
+    		top: 110px;
+    		left: 255px;
+		}
+	}
+	.page-container .text-section,
+	.textos-infooter {
+		width: auto;
+	}
+	.text-section p:nth-child(1){
+		font-size: 20px;
+	}
+	.text-section p:nth-child(2){
+		font-size: 18px;	
+	}
+	.text-section p:nth-child(3){
+		font-size: 16px;
+	}
+	.page-container .sociais-download,
+	.ongs-footer{
+		width: 220px;
+	}
+	.page-container .sociais-download {
+    	height: 290px;
+    	padding: 40px 40px;
+	}
+	.ongs-footer {
+    	padding: 30px 20px;
+    }
+	footer .ongs-footer img:nth-child(1) {
+    	width: 70px;
+	}
+	.socias-images,
+	.textos-selos {
+		display: block;
+		max-width: 340px;
+	}
+	.redes-socias{
+    	padding-bottom: 20px;
+	}
+	.lista-infooter {
+    	margin-bottom: 40px;
+    }
+    .textos-infooter {
+    	margin: 0 0 40px 0;
+	}
+	.logos-infooter{
+		align-items: center;
+	}
+	.textos-infooter::before {
+    	left: 296px;
+	}
 }
