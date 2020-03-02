@@ -431,6 +431,7 @@ footer .flex,
     }
     .header-celular img:nth-child(1){
     	width: 140px;
+    	transform: translateY(-7px);
     }
     .header-celular img:nth-child(2) {
     	top: 70px;
