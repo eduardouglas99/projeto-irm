@@ -60,7 +60,7 @@ header p{
 .header-celular{
 	transform: translate(-22px,63px);
 	animation-name: celularAnimacao;
-	animation-duration: 2s;
+	animation-duration: 3s;
 }
 
 @keyframes celularAnimacao {
@@ -74,11 +74,10 @@ header p{
     right: -30px;
     animation-name: coracaoAnimacao;
     animation-duration:4s;
-    display: none;
 }
 @keyframes coracaoAnimacao{
-	0% {top:70px; right: -15px;}
-    100% {top: 140px; right: -30px;}
+	0% {top:50%; opacity: 0;}
+    100% {top: 140px; opacity: 1;}
 }
 
 .page-container .text-section p:nth-child(1){
@@ -301,8 +300,7 @@ footer .flex,
 	}
 	.header-celular img:nth-child(2){
 		width: 211px;
-		top: 90px;
-    	right: -30px;
+		top: 140px;
 	}
 	section{
     	padding: 150px 0;
@@ -428,23 +426,24 @@ footer .flex,
 	}
 	.header-celular {
     	transform: translate(0px,40px);
-    	height: 270px;
+    	margin: 0 auto;
+    	width: 180px;
     }
     .header-celular img:nth-child(1){
     	width: 140px;
     }
     .header-celular img:nth-child(2) {
-    	top: 110px;
-    	right: 255px;
-	}
+    	top: 70px;
+    	right: -26px;	
+    }
 	@keyframes coracaoAnimacao{
 		0% {
-    		top: 60px;
-    		left: 180px;
+    		top: 120px;
+ 			opacity: 0;
 		}
 		100% {
-    		top: 110px;
-    		left: 255px;
+    		top: 70px;
+    		opacity: 1;
 		}
 	}
 	.page-container .text-section,
@@ -524,5 +523,9 @@ footer .flex,
 	}
 	.socias-images .redes-socias{
     	justify-content: space-around;
+	}
+	@keyframes coracaoAnimacao{
+	0% {top:110px; opacity: 0;}
+    100% {top: 70px; right: -26px  ;opacity: 1;}
 	}
 }
