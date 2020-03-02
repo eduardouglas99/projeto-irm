@@ -74,6 +74,7 @@ header p{
     right: -30px;
     animation-name: coracaoAnimacao;
     animation-duration:4s;
+    display: none;
 }
 @keyframes coracaoAnimacao{
 	0% {top:70px; right: -15px;}
@@ -164,7 +165,7 @@ footer .flex,
 }
 
 .socias-images{
-    width: 500px;
+    width: 560px;
  }
 
 .circle-redesocias{
@@ -265,7 +266,8 @@ footer .flex,
     	padding: 50px 20px;
 	}
 	.socias-images{
-		justify-content: space-around;
+		justify-content: space-between;
+		width: 470px;
 	}
 }
 
@@ -295,9 +297,7 @@ footer .flex,
 	}
 	.header-celular img:nth-child(1){
 		width: 180px;
-	}
-	.header-celular img {
-    	transform: translateY(-26px);
+		transform: translateY(-21px);
 	}
 	.header-celular img:nth-child(2){
 		width: 211px;
@@ -376,7 +376,10 @@ footer .flex,
     	margin-bottom: 40px;
     }
 	.textos-infooter::before {
-    	left: 374px;
+    	left: 0px;
+    	height: 1px;
+    	width: 100%;
+    	top: -20px;
 	}
 	.page-container .text-section p:nth-child(1),
 	.page-container .text-section p:nth-child(2),
@@ -396,29 +399,36 @@ footer .flex,
     	text-align: center;
     	padding: 0 30px;
 	}
+	footer{
+		padding: 0;
+	}
 	.header-logo,
 	.redes-socias{
 		margin: 0 auto;
 	}
 	.header-logo h2,
-	.textos-infooter {
+	.textos-infooter,
+	.lista-infooter,
+    .textos-selos .textos-infooter  {
 		text-align: center;
 	}
 	.page-container h2{
 		margin: 20px 0;
 		line-height: 28px;
+		font-size: 20px;
 	}
 	header p{
 		margin: 15px 0;
 	}
 	section {
-    	padding: 90px 0;
+    	padding: 80px 0;
 	}
 	section .page-container .text-section p{
 		margin-left: 0;
 	}
 	.header-celular {
-    	transform: translate(0px,60px);
+    	transform: translate(0px,40px);
+    	height: 270px;
     }
     .header-celular img:nth-child(1){
     	width: 140px;
@@ -441,25 +451,39 @@ footer .flex,
 	.textos-infooter {
 		width: auto;
 	}
-	.text-section p:nth-child(1){
+	.page-container .text-section p:nth-child(1){
 		font-size: 20px;
 	}
-	.text-section p:nth-child(2){
+	.page-container .text-section p:nth-child(2){
 		font-size: 18px;	
 	}
-	.text-section p:nth-child(3){
+	.page-container .text-section p:nth-child(3){
 		font-size: 16px;
 	}
+	.page-container .text-section p:nth-child(1),
+	.page-container .text-section p:nth-child(2),
+	.page-container .text-section p:nth-child(3){
+		margin: 0 0 30px 0;
+	}
+
 	.page-container .sociais-download,
 	.ongs-footer{
 		width: 220px;
 	}
 	.page-container .sociais-download {
-    	height: 290px;
-    	padding: 40px 40px;
+    	height: 240px;
+    	padding: 30px;
+	}
+	.page-container .sociais-download img {
+    	width: 120px;
+	}
+	.page-container .sociais-download h3 {
+    	font-size: 25px;
+    	margin-bottom: 30px;
 	}
 	.ongs-footer {
-    	padding: 30px 20px;
+    	padding: 20px;
+    	transform: translateY(-40px);
     }
 	footer .ongs-footer img:nth-child(1) {
     	width: 70px;
@@ -467,7 +491,8 @@ footer .flex,
 	.socias-images,
 	.textos-selos {
 		display: block;
-		max-width: 340px;
+		max-width: none;
+		width: 100%;
 	}
 	.redes-socias{
     	padding-bottom: 20px;
@@ -482,6 +507,22 @@ footer .flex,
 		align-items: center;
 	}
 	.textos-infooter::before {
-    	left: 296px;
+    	left: 15%;
+    	top: -20px;
+    	height: 1px;
+    	width: 70%;
+	}
+	.fab, .far {
+    	font-size: 18px;
+	}
+	.circle-redesocias {
+    	width: 32px;
+    	height: 32px;
+	}
+	.socias-images img {
+    	width: 180px;
+	}
+	.socias-images .redes-socias{
+    	justify-content: space-around;
 	}
 }
