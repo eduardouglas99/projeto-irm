@@ -65,7 +65,7 @@ header p{
 
 @keyframes celularAnimacao {
 	 0% { opacity: 0;}
-     100% { opacity: 1;) }
+     100% { opacity: 1;}
 }
 
 .header-celular img:nth-child(2){
