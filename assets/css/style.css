@@ -139,35 +139,35 @@ footer .ongs-footer img:nth-child(1){
 	margin-right: 40px;
 }
 
-.redes-socias {
+.redes-sociais {
     font-size: 24px;
     width: 151px;
 }
-.redes-socias,
-.socias-images{
+.redes-sociais,
+.sociais-images{
 	justify-content: space-between;
 }
 
 footer .flex,
-.socias-images,
-.circle-redesocias {
+.sociais-images,
+.circle-redesociais {
 	align-items: center;
 }
 
-.socias-images,
-.circle-redesocias,
+.sociais-images,
+.circle-redesociais,
 .logos-infooter,
 .textos-selos,
-.socias-images,
-.redes-socias{
+.sociais-images,
+.redes-sociais{
 	display: flex;
 }
 
-.socias-images{
+.sociais-images{
     width: 560px;
  }
 
-.circle-redesocias{
+.circle-redesociais{
 	background-color:#e30e23;
     border-radius: 50%;
     width: 42px;
@@ -176,7 +176,7 @@ footer .flex,
 	transition: all .3s ease;
  }
 
-.circle-redesocias:hover{
+.circle-redesociais:hover{
 	transform: scale(1.1);
 }
 
@@ -264,7 +264,7 @@ footer .flex,
     	width: 310px;
     	padding: 50px 20px;
 	}
-	.socias-images{
+	.sociais-images{
 		justify-content: space-between;
 		width: 470px;
 	}
@@ -313,7 +313,7 @@ footer .flex,
 	.text-section,
 	.sociais-download,
 	.ongs-footer,
-	.socias-images{
+	.sociais-images{
 		margin: 0 auto;
 	}
 	.page-container .text-section p:nth-child(1) {
@@ -349,17 +349,17 @@ footer .flex,
 	footer .ongs-footer img:nth-child(2) {
 		width: 60px;
 	}
-	.socias-images,
+	.sociais-images,
 	.textos-selos{
 		display: flex;
     	align-items: center;
 	}
-	.socias-images{;
+	.sociais-images{;
    	 	max-width: 540px;
     	justify-content: space-evenly;
    		padding: 0 0 30px 0;
 	}
-	.socias-images img{
+	.sociais-images img{
 		width:200px;
 	}
 	.infooter .page-container{
@@ -401,7 +401,7 @@ footer .flex,
 		padding: 0;
 	}
 	.header-logo,
-	.redes-socias{
+	.redes-sociais{
 		margin: 0 auto;
 	}
 	.header-logo h2,
@@ -435,7 +435,7 @@ footer .flex,
     }
     .header-celular img:nth-child(2) {
     	top: 70px;
-    	right: -26px;	
+    	right: -8px;	
     }
 	@keyframes coracaoAnimacao{
 		0% {
@@ -488,13 +488,13 @@ footer .flex,
 	footer .ongs-footer img:nth-child(1) {
     	width: 70px;
 	}
-	.socias-images,
+	.sociais-images,
 	.textos-selos {
 		display: block;
 		max-width: none;
 		width: 100%;
 	}
-	.redes-socias{
+	.redes-sociais{
     	padding-bottom: 20px;
 	}
 	.lista-infooter {
@@ -515,18 +515,18 @@ footer .flex,
 	.fab, .far {
     	font-size: 18px;
 	}
-	.circle-redesocias {
+	.circle-redesociais {
     	width: 32px;
     	height: 32px;
 	}
-	.socias-images img {
+	.sociais-images img {
     	width: 180px;
 	}
-	.socias-images .redes-socias{
+	.sociais-images .redes-sociais{
     	justify-content: space-around;
 	}
 	@keyframes coracaoAnimacao{
 	0% {top:110px; opacity: 0;}
-    100% {top: 70px; right: -26px  ;opacity: 1;}
+    100% {top: 70px; right: -8x  ;opacity: 1;}
 	}
 }
